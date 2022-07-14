@@ -1,0 +1,62 @@
+.mainProductContainer {
+  position: relative;
+  margin: 20px;
+  border-radius: 2px;
+  border: 1px solid #ddc;
+  width: 270px;
+  cursor: pointer;
+  text-align: left;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.mainProductContainer:hover {
+  box-shadow: 1px 4px 5px 0 rgb(231, 222, 222);
+}
+
+.faStarGreen {
+  font-size: 0.8rem;
+  color: green;
+}
+
+.faStarYellow {
+  font-size: 0.8rem;
+  color: #f4c430;
+}
+
+.cardContent {
+  text-align: left;
+  width: 90%;
+  margin: 0px auto 0px auto;
+}
+
+.imgContainer {
+  text-align: center;
+  border-bottom: 1px solid #dfdcdc;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  bottom: -0.9rem;
+  left: 0.2rem;
+  background-color: white;
+  background-color: transparent;
+  width: 40%;
+  padding: 5px 0px;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.imgContainer img {
+  border-radius: 2px 2px 0px 0px;
+  width: 45%;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+h4,
+h4 {
+  margin: 10px auto 10px auto;
+  padding: 0px;
+}
