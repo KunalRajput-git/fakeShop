@@ -3,7 +3,8 @@
   margin: 20px;
   border-radius: 2px;
   border: 1px solid #ddc;
-  width: 270px;
+  width: 260px;
+  height: 380px;
   cursor: pointer;
   text-align: left;
   padding-bottom: 1rem;
@@ -31,8 +32,11 @@
 }
 
 .imgContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #dfdcdc;
+  height: 250px;
   position: relative;
 }
 
@@ -49,10 +53,7 @@
 }
 
 .imgContainer img {
-  border-radius: 2px 2px 0px 0px;
   width: 45%;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
 }
 
 h4,
