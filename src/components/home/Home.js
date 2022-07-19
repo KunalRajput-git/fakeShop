@@ -7,21 +7,23 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   const [shopData, setShopData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((data) => data.json())
-      .then((data) => setShopData(data));
+      .then((data) => setShopData(data))
+      .finally(() => setIsLoading(false));
   }, []);
 
   return (
     <div className="mainProductsContainer">
-      {!shopData.length ? (
+      {isLoading ? (
         <h1 style={{ color: "grey" }}>
           Loading <FontAwesomeIcon icon={faSpinner} />
         </h1>
       ) : (
         shopData.map((data) => (
-          <Link  key={data.id} className="link" to={`products/${data.id}`}>
+          <Link key={data.id} className="link" to={`products/${data.id}`}>
             <ProductCard data={data} />
           </Link>
         ))
